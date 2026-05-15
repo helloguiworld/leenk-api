@@ -1,1 +1,1 @@
-web: gunicorn leenk.wsgi
+web: gunicorn leenk.wsgi --log-file -
