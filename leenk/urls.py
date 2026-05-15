@@ -18,5 +18,5 @@ urlpatterns = [
     path('', APIRootView.as_view(), name='api-root'),
     
     # API Apps
-    path('api/v1/users/', include(('users.urls', 'users'), namespace='users')),
+    path('users/', include(('users.urls', 'users'), namespace='users')),
 ]
