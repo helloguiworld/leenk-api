@@ -28,6 +28,15 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
 
+# CORS & CSRF
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.up.railway.app',
+    'https://*.railway.app',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+]
+
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 
